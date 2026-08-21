@@ -1,3 +1,5 @@
+package task3;
+
 public class ExtraTask2 {
     public static void main(String[] args) {
         int[] array1 = {15, 7, 15, 9, 7};
@@ -16,6 +18,7 @@ public class ExtraTask2 {
 
 
         }
+
         int secondMax = 0;
         for (int i = 1; i < arr.length - 1; i+=2) {
             if (max - arr[i] < max - arr[i+1] && max - arr[i] != 0  ) {
@@ -24,10 +27,11 @@ public class ExtraTask2 {
 
 
         }
+        System.out.println(max);
         System.out.println(secondMax);
 
 
-        System.out.println(max);
+
         int min = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] < min) {
